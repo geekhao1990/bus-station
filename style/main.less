@@ -1,0 +1,114 @@
+@gray: #333;
+@red: #f54e4e;
+@while:#fff;
+@green:rgb(73, 141, 84);
+/*reset*/
+
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+  margin: 0;
+  padding: 0;
+}
+  body{font: 14px "Microsoft YaHei",arial,"Hiragino Sans GB","Hiragino Sans GB W3"; }
+img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+input, select, textarea {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: @gray;
+}
+a, dd, div, dl, i, img, input, li, p, span, ul {
+  box-sizing: border-box;
+}
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+/*header*/
+.container {
+  width: 960px;
+  margin: 0 auto;
+  &>div {
+    overflow: hidden;
+    font-size: 19px;
+    line-height: 34px;
+  }
+  .number {
+    background: @red;
+    color: @while;
+    padding: 22px 45px;
+    font-size: 56px;
+  }
+}
+header {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+  &>div {
+    overflow: hidden;
+    font-size: 19px;
+    line-height: 34px;
+    padding-top: 42px;
+    color: @green;
+  }
+}
+/*article*/
+article
+ul {
+  overflow: hidden;
+  background: @green none repeat scroll 0% 0%;
+  li {
+    float: left;
+    color: @while;
+    font-size: 16px;
+    width: 2%;
+    text-align: center;
+    padding: 21px;
+  }
+  li.on {
+     color: @red;
+     font-weight: bold;
+   }
+}
+.info {
+  line-height: 40px;
+  text-indent: 14px;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 0;
+}
+/*footer*/
+footer {
+  .tro {
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+  }
+  .triBox {
+    height: 6px;
+    background: @red none repeat scroll 0% 0%;
+    margin: 0px auto;
+    width: 80%;
+    position: relative;
+  }
+  .tri {
+    width: 0;
+    height: 0;
+    border-width: 10px 40px;
+    border-style: solid;
+    border-color: #fff #fff @red @red;
+    position: absolute;
+    right: 0px;
+    top: -14px;
+  }
+}
